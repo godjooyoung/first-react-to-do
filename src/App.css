@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+  min-width: 800px;
+  max-width: 1200px;
+  background-color: #282c34;
+  margin : 0 auto;
+  color : whitesmoke
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  
+}
+
+.App-Header{
+  color: #61dafb;
+  font-size: xx-large;
+  font-weight: 900;
+  height: 80px;
+  width : 100%;
+  display: flex;
+  align-items : center;
+  padding: 5px;
+  justify-content: center;
+  color :whitesmoke
+}
+
+.create-div {
+  background-color: #282c34;
+  height: 50px;
+  color: #61dafb;
+  font-size: large;
+  font-weight: 900;
+  display: flex;
+  align-items : center;
+  margin: 0;
+  justify-content: right;
+  color :whitesmoke
+}
+.create-div>input {
+  text-decoration: none;
+  height: 30px;
+  width: 250px;
+  margin: 0px 5px 0px 5px;
+}
+.create-div>label {
+  text-decoration: none;
+  height: 30px;
+  width: 180px;
+  text-align: right;  
+}
+.create-div>button{
+  border: solid 3px blueviolet;
+  background-color: blueviolet;
+  font-size: large;
+  text-decoration: none;
+  border-radius: 8px;
+  width: 50px;
+  padding: 5px;
+  margin: 10px 30px 10px 10px;
+  color: white;
+}
+
+.create-div>button:hover {
+  border: solid 3px white;
+  background-color: white; /* Green */
+  color: #282c34;
+}
+
+.header{
+  height : 30px;
+  margin : 5px 0px 5px 30px;
+  font-size: large;
+  font-weight: 900;
+  text-align: left;
+}
+
+.cards {
+  display : flex;
+  flex-direction: row;
+  column-gap : 10px;
+  flex-wrap: wrap;
+  padding : 10px 30px 10px 30px;
+}
+
+.task {
+  margin : 5px 0px 5px 0px;
+  width : 250px;
+  height : 150px;
+  border : 1px solid blueviolet;
+  background-color: whitesmoke;
+  color : #555;
+  border-radius : 5px;
+}
+
+.task-title {
+  margin : 10px;
+  color : #111;
+  font-weight: 900;
+  border-radius : 5px;
+}
+
+.task-body {
+  height: 35%;
+}
+
+.task-btns {
+  color : #444;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.task-btns>button {
+  border: solid 3px blueviolet;
+  background-color: blueviolet;
+  font-size: large;
+  text-decoration: none;
+  border-radius: 8px;
+  width: 50px;
+  padding: 5px;
+  margin: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.task-btns>button:hover {
+  border: solid 3px #282c34;
+  background-color: #282c34; /* Green */
+  color: white;
+}
