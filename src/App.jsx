@@ -45,7 +45,7 @@ function App() {
    */
   function cardBtnClickEventhandle(e) {
     let btnFlg = e.target.innerText  // 완료, 취소, 삭제 값을 가진다.        
-    let todoId = e.target.id.substring(3,e.target.id.length) // 해당 todo의 아이디값을 가져온다. 
+    let todoId = e.target.id // 해당 todo의 아이디값을 가져온다. 
 
     if(btnFlg ==='삭제'){
       SetTodos([...todos.filter((item)=>(item.id != todoId))])
@@ -71,12 +71,12 @@ function App() {
       <div className="select-div">
         <div className="header">Working</div>
         <div className="cards working">
-          <Todos todos={todos} todoState="working" cardBtnClickEventhandle={cardBtnClickEventhandle} />
+          <Todos todos={todos} cardBtnClickEventhandle={cardBtnClickEventhandle} area="workingZoen"/>
         </div>
 
         <div className="header">Done</div>
         <div className="cards done">
-          <Todos todos={todos} todoState="done" cardBtnClickEventhandle={cardBtnClickEventhandle} />
+          <Todos todos={todos} cardBtnClickEventhandle={cardBtnClickEventhandle} area="doneZoen"/>
         </div>
 
       </div>
