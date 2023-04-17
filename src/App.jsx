@@ -29,7 +29,7 @@ function App() {
    * @param {*} event 
    */
   function addBtnClickEventHandler(e) {
-      if(document.getElementById('titleIpt').value == '' ||document.getElementById('bodyIpt').value =='' ){
+      if(todo.title == '' ||todo.body =='' ){
         alert("값을 입력해주세요.")
       }else{
         todos.push(todo)
