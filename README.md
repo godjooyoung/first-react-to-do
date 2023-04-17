@@ -3,11 +3,14 @@
 <h1>first-react-to-do!</h1></div>
 <h3>리액트로 만든 첫번째 todo 입니다.</h3>
 <h3>구현 화면</h3>
-<p align="center"><img width="700" alt="스크린샷 2023-04-17 오전 1 18 17" src="https://user-images.githubusercontent.com/58963027/232326191-fd81ffa7-2c38-45ac-8354-45b7c841aab6.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/58963027/232555325-0cbaba1a-d6e5-4828-bbc0-6b1f1469e7ee.gif"></p>
+<p align="center">내용 입력 후 추가 버튼을 클릭하면 TODO가 추가 됩니다.</p>
+<p align="center">TODO 완료 버튼을 누르면 완료로 처리되고 아래의 영역으로 이동합니다.</p>
+<p align="center">완료된 TODO의 취소 버튼을 누르면 완료되지않음 상태로 위쪽 영역으로 이동합니다.</p>
+<p align="center">삭제 버튼을 클릭하면 등록된 TODO가 삭제됩니다.</p>
 </div>
+
 <h3>컴포넌트 분리</h3>
 <ul>
-<li>Todo.jsx - 반복되는 투두 카드를 Todo.jsx로 분리하였습니다.</li>
+<li>Todo.jsx - 반복되는 투두 카드 목록을 Todo.jsx로 분리하였습니다.</li>
 </ul>
-<img width="450" alt="스크린샷 2023-04-17 오전 1 18 45" src="https://user-images.githubusercontent.com/58963027/232326197-7cda602c-19e4-4338-a46d-49d9fa595143.png">
-<img width="450" alt="스크린샷 2023-04-17 오전 1 18 49" src="https://user-images.githubusercontent.com/58963027/232326204-98f998fe-69d9-4a7f-8db6-3ba4d3fc338e.png">
