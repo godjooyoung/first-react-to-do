@@ -14,3 +14,47 @@
 <ul>
 <li>Todo.jsx - 반복되는 투두 카드 목록을 Todo.jsx로 분리하였습니다.</li>
 </ul>
+
+```javascript
+// App.jsx
+/** 생략 */
+      <div className="select-div">
+        <div className="header">Working</div>
+        <div className="cards working">
+          <Todos todos={todos} cardBtnClickEventhandle={cardBtnClickEventhandle} area="workingZoen"/>
+        </div>
+        <div className="header">Done</div>
+        <div className="cards done">
+          <Todos todos={todos} cardBtnClickEventhandle={cardBtnClickEventhandle} area="doneZoen"/>
+      </div>
+/** 생략 */
+```
+
+```javascript
+// components/Todo.jsx
+    const Todo = ({ todos, cardBtnClickEventhandle, area}) => {
+    // todos.isDone 값에 따라 리턴되는 배열을 달리한다.
+    return (
+        <>
+        {
+            todos.filter((item) => {
+                return area=='workingZoen'?item.isDone == false:item.isDone == true
+            }).map((item) => {
+                return (
+                <div key={item.id} className="task">
+                    <div className="task-title">{item.title}</div>
+                    <div className="task-body">{item.body}</div>
+                    <div className="task-btns">
+                        <button onClick={cardBtnClickEventhandle} id={item.id}>삭제</button>
+                        <button onClick={cardBtnClickEventhandle} id={item.id}>{area=='workingZoen'?'완료':'취소'}</button>
+                    </div>
+                </div>
+                )
+            })
+        }
+    </>
+    )
+}
+
+export default Todo;
+```
