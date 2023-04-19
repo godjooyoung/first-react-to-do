@@ -12,11 +12,12 @@
 
 <h3>컴포넌트 분리</h3>
 <ul>
+<li>TodoList.jsx - 투두리스트를 TodoList.jsx로 분리하였습니다.</li>
 <li>Todo.jsx - 반복되는 투두 카드 목록을 Todo.jsx로 분리하였습니다.</li>
 </ul>
 
 ```javascript
-// App.jsx
+// components/TodoList.jsx
 /** 생략 */
       <div className="select-div">
         <div className="header">Working</div>

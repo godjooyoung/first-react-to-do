@@ -62,7 +62,7 @@
 
 .create-div>button:hover {
   border: solid 3px white;
-  background-color: white; /* Green */
+  background-color: white; 
   color: #282c34;
 }
 
