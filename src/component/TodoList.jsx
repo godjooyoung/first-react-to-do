@@ -1,10 +1,8 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Todos from './Todo'
-import { crateTodo, deleteTodo, updateTodo, selectTodo } from '../redux/modules/todoReduser'
+import { crateTodo, updateTodo } from '../redux/modules/todoReduser'
 
-// 아이디값
-let id = 0;
 
 function TodosList() {
 
@@ -35,23 +33,6 @@ function TodosList() {
       dispatch(updateTodo({title: e.target.value, body: todoList.todo.body, isDone: todoList.todo.isDone}))
     }else{
       dispatch(updateTodo({title: todoList.todo.title, body: e.target.value, isDone: todoList.todo.isDone}))
-    }
-  }
-
-  /**
-   * 완료, 취소, 삭제 버튼을 눌렀을때 동작하는 함수
-   * @param {*} event 
-   */
-  function cardBtnClickEventhandle(e) {
-    let btnFlg = e.target.innerText  // 완료, 취소, 삭제 값을 가진다.        
-    let todoId = e.target.id // 해당 todo의 아이디값을 가져온다. 
-
-    if (btnFlg === '삭제') {
-      dispatch(deleteTodo())
-    } else if (btnFlg == '완료' || btnFlg == '취소') {
-      dispatch(selectTodo())
-    } else {
-      dispatch(selectTodo())
     }
   }
 

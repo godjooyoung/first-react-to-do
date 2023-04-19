@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { crateTodo, deleteTodo, updateTodo, selectTodo,  toggleTodo} from '../redux/modules/todoReduser'
-
+import { deleteTodo, selectTodo,  toggleTodo} from '../redux/modules/todoReduser'
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 const Todo = ({area }) => {
 
     /** 스토어에 접근해서 값을 읽어보자 */
@@ -29,6 +29,10 @@ const Todo = ({area }) => {
         }
     }
 
+    const navigate = useNavigate()
+    const location = useLocation()
+    const param = useParams()
+
 
     // todos.isDone 값에 따라 리턴되는 배열을 달리한다.
     return (
@@ -39,6 +43,7 @@ const Todo = ({area }) => {
                 }).map((item) => {
                     return (
                         <div key={item.id} className="task">
+                            <div onClick={()=>{navigate('/details/'+item.id)}} >상세보기</div>
                             <div className="task-title">{item.title}</div>
                             <div className="task-body">{item.body}</div>
                             <div className="task-btns">

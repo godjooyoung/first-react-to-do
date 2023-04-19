@@ -32,15 +32,13 @@ export const updateTodo = (data) => {
     }
 }
 
-export const selectTodo = (payload) => {
+export const selectTodo = () => {
     return {
         type: SELECT_TODO,
-        payload : Number(payload)
     }
 }
 
 export const toggleTodo = (data) => {
-    console.log("0. 토글", data)
     return {
         type: TOGGLE_TODO,
         payload : data
@@ -121,13 +119,17 @@ const todoReducer = (state = initState, action) => {
                 todoList : [...state.todoList]
             }
         case SELECT_TODO:
-            console.log("// TODO 상세보기")
+            // TODO 상세보기, 상세보기 하면서 상태값 변경 (리스트는 그대로 입력값은 초기값으로
             return {
-                id: state.id+1,
-                isDone: false,
-                title:'',
-                body:''
+                todo : {
+                    id: state.todo.id,
+                    isDone: false,
+                    title: '',
+                    body: ''
+                },
+                todoList : state.todoList
             }
+
         default:
             return {
                 todo : {

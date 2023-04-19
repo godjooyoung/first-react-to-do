@@ -1,14 +1,11 @@
 import './App.css';
 import React from 'react';
-import TodosList from './component/TodoList'
+import Router from "./shared/Router";
 
 function App() {
   return (
-    <div className="App">
-      <TodosList>
-      </TodosList>
-    </div>
+    <Router>
+    </Router>
   );
 }
-
 export default App;
