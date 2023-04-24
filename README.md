@@ -13,7 +13,7 @@
 <p align="center">삭제 버튼을 클릭하면 등록된 TODO가 삭제됩니다.</p>
 </div>
 
-<h3>파일구조</h3>
+### 파일구조
 .<br/>
 ├── README.md<br/>
 ├── node_modules<br/>
