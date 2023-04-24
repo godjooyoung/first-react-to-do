@@ -13,33 +13,31 @@
 <p align="center">삭제 버튼을 클릭하면 등록된 TODO가 삭제됩니다.</p>
 </div>
 
-<div>
 <h3>파일구조</h3>
-.
-├── README.md
-├── node_modules
-├── package.json
-├── public
-├── src
-│   ├── component
-│   │   ├── Todo.jsx.     (todo 카드의 내용을 담고 있는 컴포넌트입니다.)
-│   │   └── TodoList.jsx  (todo 카드들을 표현하는 부분을 담고 있는 컴포넌트 입니다.)
-│   ├── pages
-│   │   ├── Details.jsx   (상세내용입니다.)
-│   │   └── Main.jsx      (TodoList를 가져오는 페이지입니다.)
-│   ├── redux
-│   │   ├── config
-│   │   └── modules
-│   ├── shared
-│   │   └── Router.jsx
-│   ├── styles
-│   │   └── styles.jsx
-│   ├── App.css
-│   ├── App.jsx
-│   ├── App.test.js
-│   ├── index.css
-│   ├── index.js
-│   ├── reset.css
-│   └── setupTests.js
-└── yarn.lock
-</div>
+.<br/>
+├── README.md<br/>
+├── node_modules<br/>
+├── package.json<br/>
+├── public<br/>
+├── src<br/>
+│   ├── component<br/>
+│   │   ├── Todo.jsx.     (todo 카드의 내용을 담고 있는 컴포넌트입니다.)<br/>
+│   │   └── TodoList.jsx  (todo 카드들을 표현하는 부분을 담고 있는 컴포넌트 입니다.)<br/>
+│   ├── pages<br/>
+│   │   ├── Details.jsx   (상세내용입니다.)<br/>
+│   │   └── Main.jsx      (TodoList를 가져오는 페이지입니다.)<br/>
+│   ├── redux<br/>
+│   │   ├── config<br/>
+│   │   └── modules<br/>
+│   ├── shared<br/>
+│   │   └── Router.jsx<br/>
+│   ├── styles<br/>
+│   │   └── styles.jsx<br/>
+│   ├── App.css<br/>
+│   ├── App.jsx<br/>
+│   ├── App.test.js<br/>
+│   ├── index.css<br/>
+│   ├── index.js<br/>
+│   ├── reset.css<br/>
+│   └── setupTests.js<br/>
+└── yarn.lock<br/>
